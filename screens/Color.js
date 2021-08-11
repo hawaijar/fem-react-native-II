@@ -10,7 +10,8 @@ import {
 
 const ColorComponent = ({color, code, navigation}) => {
   return (
-    <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+    <TouchableOpacity
+      onPress={() => navigation.navigate('Home', {title: color})}>
       <View
         style={[
           styles.header,
